@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Open+Sans|Hind+Siliguri|Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/hotel.css">
+    <link rel="stylesheet" href="css/room.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="header-all">
+      <div class="navbar-container">
+        <ul class="navbar">
+          <li class="nav-item"><a href="home.html">Home</a></li>
+          <li class="nav-item current"><a href="#">Rooms</a></li>
+          <li class="nav-item"><a href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a>Restaurant</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a>Reservation</a></li>
+        </ul>
+      </div>
+      <div class="page-title">
+        <div class="prev-page">
+          <a href="home.html">
+            <img src="img/prev-page.svg" alt="previous arrow" width="50px" height="50px">
+          </a>
+        </div>
+        <div class="title">
+          <h2>Grab your rooms NOW!</h2>
+        </div>
+        <div class="next-page">
+          <a href="facilities.html">
+            <img src="img/next-page.svg" alt="next arrow" width="50px" height="50px">
+          </a>
+        </div>
+      </div>
+      </header>
+
+      <section class="section room-section">
+            <div class="room-content">
+              <div class="room-card">
+                <div class="room-row">
+                  <div class="room-col">
+                    <div class="wrap">
+                      <div id="arrow-left-first" class="arrow left"></div>
+                        <div id="slider">
+                          <div class="slide first slide1">
+                            <img src="img/test1.jpg" alt="hotel room">
+                          </div>
+                          <div class="slide first slide2">
+                            <img src="img/test2.jpg" alt="hotel room">
+                          </div>
+                          <div class="slide first slide3">
+                            <img src="img/test3.jpg" alt="hotel room">
+                          </div>
+                        </div>
+                      <div id="arrow-right-first" class="arrow right"></div>
+                    </div>
+                  </div>
+
+                <div class="room-col">
+                  <div class="room-text">
+                    <div class="room-title">
+                      <h2>Standard Room</h2>
+                      <div class="room-price">
+                        <span>From</span>
+                        <h2>$99</h2>
+                        <sub>/night</sub>
+                      </div>
+                    </div>
+                    <div class="room-desc">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris, bibendum
+                      eget sapien ac, ultrices rhoncus ipsum.</p>
+                    </div>
+                    <div class="room-features">
+                      <div class="room-info">
+                        <img src="img/room-tv.svg" alt="television">
+                        <span>Smart TV</span>
+                      </div>
+                      <div class="room-info">
+                        <img src="img/room-wifi.svg" alt="television">
+                        <span>High Wi-fi</span>
+                      </div>
+                      <div class="room-info">
+                        <img src="img/room-ac.svg" alt="television">
+                        <span>AC</span>
+                      </div>
+                      <div class="room-info">
+                        <img src="img/room-park.svg" alt="television">
+                        <span>Parking</span>
+                      </div>
+                      <div class="room-info last">
+                        <img src="img/room-pool.svg" alt="television">
+                        <span>Pool</span>
+                      </div>
+                    </div>
+                    <a href="#" class="book-btn"><span>Book Now</span> <img src="img/next.svg" alt="next button"> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <script>
+
+              let sliderImagesOne= document.querySelectorAll('.slide.first'),
+                  arrowLeftOne= document.querySelector('#arrow-left-first'),
+                  arrowRightOne= document.querySelector('#arrow-right-first'),
+                  currentOne= 0;
+
+                  function resetOne() {
+                    for(let i=0; i < sliderImagesOne.length; i++) {
+                      sliderImagesOne[i].style.display = 'none';
+                    }
+                  }
+
+                  function startSlideOne() {
+                    resetOne();
+                    sliderImagesOne[0].style.display = 'block';
+                  }
+
+                  function slideLeftOne() {
+                    resetOne();
+                    sliderImagesOne[currentOne - 1].style.display = 'block';
+                    currentOne--;
+                  }
+
+                  arrowLeftOne.addEventListener('click', function() {
+                    if (currentOne === 0) {
+                      currentOne = sliderImagesOne.length;
+                    }
+                    slideLeftOne();
+                  })
+
+                  function slideRightOne() {
+                    resetOne();
+                    sliderImagesOne[currentOne + 1].style.display = 'block';
+                    currentOne++;
+                  }
+
+                  arrowRightOne.addEventListener('click', function() {
+                    if (currentOne === sliderImagesOne.length - 1) {
+                      currentOne = -1;
+                    }
+                    slideRightOne();
+                  })
+
+                  startSlideOne();
+
+            </script>
+
+            <div class="room-card">
+              <div class="room-row">
+                <div class="room-col">
+                  <div class="wrap">
+                    <div id="arrow-left-second" class="arrow left"></div>
+                      <div id="slider">
+                        <div class="slide second slide1">
+                          <img src="img/test4.jpg" alt="hotel room">
+                        </div>
+                        <div class="slide second slide2">
+                          <img src="img/test5.jpg" alt="hotel room">
+                        </div>
+                        <div class="slide second slide3">
+                          <img src="img/test6.jpg" alt="hotel room">
+                        </div>
+                      </div>
+                    <div id="arrow-right-second" class="arrow right"></div>
+                  </div>
+                </div>
+
+              <div class="room-col">
+                <div class="room-text">
+                  <div class="room-title">
+                    <h2>Deluxe Room</h2>
+                    <div class="room-price">
+                      <span>From</span>
+                      <h2>$149</h2>
+                      <sub>/night</sub>
+                    </div>
+                  </div>
+                  <div class="room-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris, bibendum
+                    eget sapien ac, ultrices rhoncus ipsum.</p>
+                  </div>
+                  <div class="room-features">
+                    <div class="room-info">
+                      <img src="img/room-tv.svg" alt="television">
+                      <span>Smart TV</span>
+                    </div>
+                    <div class="room-info">
+                      <img src="img/room-wifi.svg" alt="television">
+                      <span>High Wi-fi</span>
+                    </div>
+                    <div class="room-info">
+                      <img src="img/room-ac.svg" alt="television">
+                      <span>AC</span>
+                    </div>
+                    <div class="room-info">
+                      <img src="img/room-park.svg" alt="television">
+                      <span>Parking</span>
+                    </div>
+                    <div class="room-info last">
+                      <img src="img/room-pool.svg" alt="television">
+                      <span>Pool</span>
+                    </div>
+                  </div>
+                  <a href="#" class="book-btn"><span>Book Now</span> <img src="img/next.svg" alt="next button"> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <script>
+
+            let sliderImagesTwo= document.querySelectorAll('.slide.second'),
+                arrowLeftTwo= document.querySelector('#arrow-left-second'),
+                arrowRightTwo= document.querySelector('#arrow-right-second'),
+                currentTwo= 0;
+
+                function resetTwo() {
+                  for(let j=0; j < sliderImagesTwo.length; j++) {
+                    sliderImagesTwo[j].style.display = 'none';
+                  }
+                }
+
+                function startSlideTwo() {
+                  resetTwo();
+                  sliderImagesTwo[0].style.display = 'block';
+                }
+
+                function slideLeftTwo() {
+                  resetTwo();
+                  sliderImagesTwo[currentTwo - 1].style.display = 'block';
+                  currentTwo--;
+                }
+
+                arrowLeftTwo.addEventListener('click', function() {
+                  if (currentTwo === 0) {
+                    currentTwo = sliderImagesTwo.length;
+                  }
+                  slideLeftTwo();
+                })
+
+                function slideRightTwo() {
+                  resetTwo();
+                  sliderImagesTwo[currentTwo + 1].style.display = 'block';
+                  currentTwo++;
+                }
+
+                arrowRightTwo.addEventListener('click', function() {
+                  if (currentTwo === sliderImagesTwo.length - 1) {
+                    currentTwo = -1;
+                  }
+                  slideRightTwo();
+                })
+
+                startSlideTwo();
+
+          </script>
+
+          <div class="room-card">
+            <div class="room-row">
+              <div class="room-col">
+                <div class="wrap">
+                  <div id="arrow-left-third" class="arrow left"></div>
+                    <div id="slider">
+                      <div class="slide third slide1">
+                        <img src="img/test7.jpg" alt="hotel room">
+                      </div>
+                      <div class="slide third slide2">
+                        <img src="img/test8.jpg" alt="hotel room">
+                      </div>
+                      <div class="slide third slide3">
+                        <img src="img/test9.jpg" alt="hotel room">
+                      </div>
+                    </div>
+                  <div id="arrow-right-third" class="arrow right"></div>
+                </div>
+              </div>
+
+            <div class="room-col">
+              <div class="room-text">
+                <div class="room-title">
+                  <h2>Superior Room</h2>
+                  <div class="room-price">
+                    <span>From</span>
+                    <h2>$199</h2>
+                    <sub>/night</sub>
+                  </div>
+                </div>
+                <div class="room-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris, bibendum
+                  eget sapien ac, ultrices rhoncus ipsum.</p>
+                </div>
+                <div class="room-features">
+                  <div class="room-info">
+                    <img src="img/room-tv.svg" alt="television">
+                    <span>Smart TV</span>
+                  </div>
+                  <div class="room-info">
+                    <img src="img/room-wifi.svg" alt="television">
+                    <span>High Wi-fi</span>
+                  </div>
+                  <div class="room-info">
+                    <img src="img/room-ac.svg" alt="television">
+                    <span>AC</span>
+                  </div>
+                  <div class="room-info">
+                    <img src="img/room-park.svg" alt="television">
+                    <span>Parking</span>
+                  </div>
+                  <div class="room-info last">
+                    <img src="img/room-pool.svg" alt="television">
+                    <span>Pool</span>
+                  </div>
+                </div>
+                <a href="#" class="book-btn"><span>Book Now</span> <img src="img/next.svg" alt="next button"> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script>
+
+          let sliderImagesThree= document.querySelectorAll('.slide.third'),
+              arrowLeftThree= document.querySelector('#arrow-left-third'),
+              arrowRightThree= document.querySelector('#arrow-right-third'),
+              currentThree= 0;
+
+              function resetThree() {
+                for(let k=0; k < sliderImagesThree.length; k++) {
+                  sliderImagesThree[k].style.display = 'none';
+                }
+              }
+
+              function startSlideThree() {
+                resetThree();
+                sliderImagesThree[0].style.display = 'block';
+              }
+
+              function slideLeftThree() {
+                resetThree();
+                sliderImagesThree[currentThree - 1].style.display = 'block';
+                currentThree--;
+              }
+
+              arrowLeftThree.addEventListener('click', function() {
+                if (currentThree === 0) {
+                  currentThree = sliderImagesThree.length;
+                }
+                slideLeftThree();
+              })
+
+              function slideRightThree() {
+                resetThree();
+                sliderImagesThree[currentThree + 1].style.display = 'block';
+                currentThree++;
+              }
+
+              arrowRightThree.addEventListener('click', function() {
+                if (currentThree === sliderImagesThree.length - 1) {
+                  currentThree = -1;
+                }
+                slideRightThree();
+              })
+
+              startSlideThree();
+
+        </script>
+
+        <div class="room-card">
+          <div class="room-row">
+            <div class="room-col">
+              <div class="wrap">
+                <div id="arrow-left-fourth" class="arrow left"></div>
+                  <div id="slider">
+                    <div class="slide fourth slide1">
+                      <img src="img/test10.jpg" alt="hotel room">
+                    </div>
+                    <div class="slide fourth slide2">
+                      <img src="img/test11.jpg" alt="hotel room">
+                    </div>
+                    <div class="slide fourth slide3">
+                      <img src="img/test12.jpg" alt="hotel room">
+                    </div>
+                  </div>
+                <div id="arrow-right-fourth" class="arrow right"></div>
+              </div>
+            </div>
+
+          <div class="room-col">
+            <div class="room-text">
+              <div class="room-title">
+                <h2>Family Room</h2>
+                <div class="room-price">
+                  <span>From</span>
+                  <h2>$279</h2>
+                  <sub>/night</sub>
+                </div>
+              </div>
+              <div class="room-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris, bibendum
+                eget sapien ac, ultrices rhoncus ipsum.</p>
+              </div>
+              <div class="room-features">
+                <div class="room-info">
+                  <img src="img/room-tv.svg" alt="television">
+                  <span>Smart TV</span>
+                </div>
+                <div class="room-info">
+                  <img src="img/room-wifi.svg" alt="television">
+                  <span>High Wi-fi</span>
+                </div>
+                <div class="room-info">
+                  <img src="img/room-ac.svg" alt="television">
+                  <span>AC</span>
+                </div>
+                <div class="room-info">
+                  <img src="img/room-park.svg" alt="television">
+                  <span>Parking</span>
+                </div>
+                <div class="room-info last">
+                  <img src="img/room-pool.svg" alt="television">
+                  <span>Pool</span>
+                </div>
+              </div>
+              <a href="#" class="book-btn"><span>Book Now</span> <img src="img/next.svg" alt="next button"> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+
+        let sliderImagesFour= document.querySelectorAll('.slide.fourth'),
+            arrowLeftFour= document.querySelector('#arrow-left-fourth'),
+            arrowRightFour= document.querySelector('#arrow-right-fourth'),
+            currentFour= 0;
+
+            function resetFour() {
+              for(let n=0; n < sliderImagesFour.length; n++) {
+                sliderImagesFour[n].style.display = 'none';
+              }
+            }
+
+            function startSlideFour() {
+              resetFour();
+              sliderImagesFour[0].style.display = 'block';
+            }
+
+            function slideLeftFour() {
+              resetFour();
+              sliderImagesFour[currentFour - 1].style.display = 'block';
+              currentFour--;
+            }
+
+            arrowLeftFour.addEventListener('click', function() {
+              if (currentFour === 0) {
+                currentFour = sliderImagesFour.length;
+              }
+              slideLeftFour();
+            })
+
+            function slideRightFour() {
+              resetFour();
+              sliderImagesFour[currentFour + 1].style.display = 'block';
+              currentFour++;
+            }
+
+            arrowRightFour.addEventListener('click', function() {
+              if (currentFour === sliderImagesFour.length - 1) {
+                currentFour = -1;
+              }
+              slideRightFour();
+            })
+
+            startSlideFour();
+
+        </script>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="contact">
+            <div class="contact-item location">
+              <img src="img/location.svg" alt="location image" width="50px" height="50px">
+              <h4>Location</h4>
+              <p>221B Baker Street, Marylebone, London.</p>
+            </div>
+            <div class="contact-item reception">
+              <img src="img/contact.svg" alt="telephone image" width="50px" height="50px">
+              <h4>Reception</h4>
+              <p>+95-9123456789,</p>
+              <p>nitram@gmail.com</p>
+            </div>
+            <div class="contact-item restaurant">
+              <img src="img/telephone.svg" alt="phone image" width="50px" height="50px">
+              <h4>Restaurant</h4>
+              <p>+95-9123456789</p>
+            </div>
+          </div>
+          <div class="explore-button">
+            <span>Explore More</span>
+            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fab fa-instagram"></i> </a>
+            <a href="#"> <i class="fab fa-twitter"></i> </a>
+          </div>
+        </div>
+        <div class="credit">
+          <p>Copyright © 2019. Nitram Hotel. All rights reserved. | Made with love by Nitram.</p>
+        </div>
+      </footer>
+  </body>
+</html>

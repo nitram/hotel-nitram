@@ -1,0 +1,169 @@
+.section {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 120px;
+}
+.feature-content {
+  padding: 30px 50px;
+}
+.hot-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+.hot-header h2 {
+  padding-left: 30px;
+  font-size: 50px;
+  color: #232323;
+}
+.feature {
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+.feature-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-col {
+  position: relative;
+  box-sizing: border-box;
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+.feature-col.padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.feature-img.first {
+  width: 100%;
+  height: 100%;
+  background: url(../img/restaurant-img.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.feature-img.second {
+  width: 100%;
+  height: 100%;
+  background: url(../img/massage-img.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.more-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.5);
+  transition: .5s ease-out;
+}
+.more-button.first {
+  transform: translateX(100%);
+}
+.feature-col.first:hover .more-button.first {
+  transform: translateX(0%);
+}
+.more-button.second {
+  transform: translateX(-100%);
+}
+.feature-col.second:hover .more-button.second {
+  transform: translateX(0%);
+}
+.more-button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  padding: 10px 30px;
+  border: 1px solid #bbb;
+  border-radius: 50px;
+  transition: .2s linear;
+}
+.more-button a:hover {
+  background: rgba(30, 30, 30, 0.6)
+}
+.feature-title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 70px 0;
+
+}
+.feature-title h2 {
+  font-size: 50px;
+  position: absolute;
+  color: rgba(150, 150, 150, 0.4);
+  z-index: 0;
+}
+.feature-title h3 {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  font-size: 30px;
+  color: #0B4B68;
+  z-index: 1;
+}
+.feature-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.feature-content p {
+  font-size: 18px;
+  color: #232323;
+}
+
+.facility-container {
+  margin: 80px 150px;
+}
+.facility-header {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facility-header h2 {
+  padding: 20px 250px;
+  font-size: 40px;
+  color: #232323;
+  border-bottom: 2px solid;
+}
+.facility-card {
+  background: #e2e2e2;
+  margin-right: 70px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 23px 4px #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration:none;
+  color:black;
+  width: 250px;
+  height: 250px;
+  transform: scale(1);
+  text-align: center;
+  transition: .3s;
+}
+.facility-card.last-col {
+  margin-right: 0;
+}
+.facility-card:hover {
+  cursor: none;
+  background: #fff;
+  transform: scale(1.02);
+  box-shadow: 4px 8px 23px 8px #888;
+}
+.facility-card a {
+  text-decoration:none;
+  color:black;
+}
+.facility-card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 70px;
+}

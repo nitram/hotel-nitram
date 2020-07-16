@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Open+Sans|Hind+Siliguri|Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/hotel.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="header-all">
+      <div class="navbar-container">
+        <ul class="navbar">
+          <li class="nav-item"><a href="home.html">Home</a></li>
+          <li class="nav-item"><a href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a>Restaurant</a></li>
+          <li class="nav-item current"><a href="#">Gallery</a></li>
+          <li class="nav-item"><a>Reservation</a></li>
+        </ul>
+      </div>
+      <div class="page-title">
+        <div class="prev-page">
+          <a href="facilities.html">
+            <img src="img/prev-page.svg" alt="previous arrow" width="50px" height="50px">
+          </a>
+        </div>
+        <div class="title">
+          <h2>Take a quick look around!</h2>
+        </div>
+        <div class="next-page">
+          <a>
+            <img src="img/next-page.svg" alt="next arrow" width="50px" height="50px">
+          </a>
+        </div>
+      </div>
+      </header>
+
+      <section class="section gallery-section">
+        <div class="inner-width">
+          <div class="gallery">
+
+            <a href="img/hotel1.jpg" class="image">
+              <img src="img/hotel1.jpg" alt="">
+            </a>
+            <a href="img/hotel2.jpg" class="image">
+              <img src="img/hotel2.jpg" alt="">
+            </a>
+            <a href="img/hotel3.jpg" class="image">
+              <img src="img/hotel3.jpg" alt="">
+            </a>
+            <a href="img/hotel4.jpg" class="image">
+              <img src="img/hotel4.jpg" alt="">
+            </a>
+            <a href="img/hotel5.jpg" class="image">
+              <img src="img/hotel5.jpg" alt="">
+            </a>
+            <a href="img/hotel6.jpg" class="image">
+              <img src="img/hotel6.jpg" alt="">
+            </a>
+            <a href="img/hotel7.jpg" class="image">
+              <img src="img/hotel7.jpg" alt="">
+            </a>
+            <a href="img/hotel8.jpg" class="image">
+              <img src="img/hotel8.jpg" alt="">
+            </a>
+            <a href="img/hotel9.jpg" class="image">
+              <img src="img/hotel9.jpg" alt="">
+            </a>
+            <a href="img/hotel10.jpg" class="image">
+              <img src="img/hotel10.jpg" alt="">
+            </a>
+            <a href="img/hotel11.jpg" class="image">
+              <img src="img/hotel11.jpg" alt="">
+            </a>
+            <a href="img/hotel12.jpg" class="image">
+              <img src="img/hotel12.jpg" alt="">
+            </a>
+            <a href="img/test1.jpg" class="image">
+              <img src="img/test1.jpg" alt="">
+            </a>
+            <a href="img/test2.jpg" class="image">
+              <img src="img/test2.jpg" alt="">
+            </a>
+            <a href="img/test3.jpg" class="image">
+              <img src="img/test3.jpg" alt="">
+            </a>
+            <a href="img/test4.jpg" class="image">
+              <img src="img/test4.jpg" alt="">
+            </a>
+            <a href="img/test5.jpg" class="image">
+              <img src="img/test5.jpg" alt="">
+            </a>
+            <a href="img/test6.jpg" class="image">
+              <img src="img/test6.jpg" alt="">
+            </a>
+            <a href="img/test7.jpg" class="image">
+              <img src="img/test7.jpg" alt="">
+            </a>
+            <a href="img/test8.jpg" class="image">
+              <img src="img/test8.jpg" alt="">
+            </a>
+
+            <script>
+              $(".gallery").magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery:{
+                  enabled: true
+                }
+              })
+            </script>
+
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="contact">
+            <div class="contact-item location">
+              <img src="img/location.svg" alt="location image" width="50px" height="50px">
+              <h4>Location</h4>
+              <p>221B Baker Street, Marylebone, London.</p>
+            </div>
+            <div class="contact-item reception">
+              <img src="img/contact.svg" alt="telephone image" width="50px" height="50px">
+              <h4>Reception</h4>
+              <p>+95-9123456789,</p>
+              <p>nitram@gmail.com</p>
+            </div>
+            <div class="contact-item restaurant">
+              <img src="img/telephone.svg" alt="phone image" width="50px" height="50px">
+              <h4>Restaurant</h4>
+              <p>+95-9123456789</p>
+            </div>
+          </div>
+          <div class="explore-button">
+            <span>Explore More</span>
+            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fab fa-instagram"></i> </a>
+            <a href="#"> <i class="fab fa-twitter"></i> </a>
+          </div>
+        </div>
+        <div class="credit">
+          <p>Copyright © 2019. Nitram Hotel. All rights reserved. | Made with love by Nitram.</p>
+        </div>
+      </footer>
+  </body>
+</html>

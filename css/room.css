@@ -1,0 +1,146 @@
+.room-content {
+  margin-top: 100px;
+}
+.room-card {
+  box-shadow: 2px 15px 75px 6px #828282;
+  margin-bottom: 100px;
+  background-color: #0B4B68;
+}
+.room-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.room-col {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 379px;
+}
+.slide img{
+  width: 100%;
+  height: 379px;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.arrow.left {
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 20px;
+}
+.arrow.right {
+  border-width: 10px 0px 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 20px;
+}
+.room-card .room-text {
+  padding: 33px 30px 34px 0;
+}
+.room-card .room-text .room-title {
+  overflow: hidden;
+	margin-bottom: 18px;
+	padding-right: 40px;
+}
+.room-card .room-text .room-title h2 {
+  float: left;
+	font-size: 36px;
+	color: #b2fcff;
+}
+.room-card .room-text .room-title .room-price {
+  float: right;
+	position: relative;
+}
+.room-card .room-text .room-title .room-price span {
+  position: absolute;
+	left: -40px;
+	bottom: 7px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+	color: #d2fafb;
+}
+.room-card .room-text .room-title .room-price h2 {
+  font-size: 36px;
+	color: #b2fcff;
+	font-weight: 400;
+}
+.room-card .room-text .room-title .room-price sub {
+  position: absolute;
+	right: -37px;
+	bottom: 13px;
+	color: #d2fafb;
+	font-weight: 300;
+}
+.room-card .room-text .room-desc {
+  margin-bottom: 20px;
+}
+.room-card .room-text .room-desc p {
+  font-size: 16px;
+	color: #d2fafb;
+	line-height: 32px;
+	letter-spacing: 0.2px;
+}
+.room-card .room-text .room-features {
+  overflow: hidden;
+	margin-bottom: 35px;
+}
+.room-card .room-text .room-features .room-info {
+  float: left;
+	text-align: center;
+	margin-right: 38px;
+}
+.room-card .room-text .room-features .room-info.last {
+  margin-right: 0;
+}
+.room-card .room-text .room-features .room-info img {
+  width: 50px;
+  height: 50px;
+  display: block;
+	color: #d2fafb;
+}
+.room-card .room-text .room-features .room-info span {
+  display: block;
+	font-size: 14px;
+	font-weight: 400;
+	color: #d2fafb;
+}
+.room-card .room-text .book-btn {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 120px;
+  border: 2px solid #1696D1;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  color: #d2fafb;
+  padding: 15px 30px;
+}
+.room-card .room-text .book-btn img {
+  width: 20px;
+  height: 20px;
+  transition: ease-in-out .2s;
+}
+.book-btn:hover img {
+  transform: translateX(10px);
+}

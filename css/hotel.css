@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e2e2e2;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+.header-all {
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.navbar-container {
+  padding-top: 25px;
+  width: 100%;
+  background-color: #424242;
+  opacity: 0.7;
+}
+.navbar
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  display: flex;
+}
+.nav-item {
+  list-style: none;
+  padding: 30px 40px;
+  margin: 0px 1px;
+}
+.nav-item a {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+}
+.nav-item a:hover {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+}
+.navbar .current a {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 150px 0 150px 0;
+}
+.page-title .prev-page {
+  padding-left: 70px;
+}
+.page-title .next-page {
+  padding-right: 70px;
+}
+
+/* heading title for other pages */
+.header {
+  margin: 50px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  margin: 0;
+  padding: 10px 10px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #0B4B68;
+  border-top: 3px solid #0B4B68;
+  color: #fff;
+  text-shadow: 0 0 4px #0B4B68;
+  font-family: "montserrat", sans-serif;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 120px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  padding-top: 50px;
+  background-color: #d2d2d2;
+}
+.footer-content {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content .contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-content .contact .contact-item {
+  display: flex;
+  flex: 0 0 30%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  margin: 0 20px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.footer-content .contact .contact-item img {
+  padding: 15px 70px;
+  border-bottom: 2px solid #555;
+}
+.footer-content .contact .contact-item h4 {
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.explore-button {
+  margin: 30px;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.explore-button span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 9;
+  transition: .2s linear;
+}
+.explore-button:hover span {
+  transform: translateY(100%);
+}
+.explore-button a {
+  flex: 1;
+  font-size: 26px;
+  color: #1696D1;
+  text-align: center;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: .1s linear;
+}
+.explore-button:hover a {
+  transform: translateY(0);
+  opacity: 1;
+}
+.explore-button a:nth-of-type(1) {
+  transition-delay: 0;
+}
+.explore-button a:nth-of-type(2) {
+  transition-delay: .15s;
+}
+.explore-button a:nth-of-type(3) {
+  transition-delay: .3s;
+}
+hr.endline {
+
+}
+.credit {
+  padding: 30px;
+  text-align: center;
+  border-top: 2px solid #828282;
+}
+
+@media screen and (max-width:1000px) {
+  .navbar-container .navbar .nav-item {display: none;}
+  .navbar-container .navbar .nav-item:first-child {display: block;}
+  .navbar-container .navbar .nav-item:nth-child(2) {display: block;}
+  .navbar-container .navbar .nav-item:nth-child(5) {display: block;}
+  .navbar-container .navbar .nav-item:nth-child(6) {display: block;}
+}
